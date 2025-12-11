@@ -1,0 +1,29 @@
+#style.css
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+    overflow: hidden; /* Prevent scrollbars if elements go out of bounds */
+}
+
+.birthday-text {
+    font-size: 4em;
+    color: #ff69b4; /* Pink color */
+    animation: bounce 2s infinite alternate; /* Apply bounce animation */
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* Move up */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
